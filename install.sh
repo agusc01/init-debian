@@ -38,6 +38,9 @@ sudo apt install vim -y
 sudo apt install xclip -y
 sudo apt install calcurse -y
 
+# VIM always is important ...
+echo "set relativenumber" >>~/.vimrc
+
 # Suckless DWM enviroments
 sudo apt install make -y
 sudo apt install gcc -y
