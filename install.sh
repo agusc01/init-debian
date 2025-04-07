@@ -50,6 +50,7 @@ sudo apt install libx11-dev -y
 sudo apt install libxft-dev -y
 sudo apt install libxinerama-dev -y
 # sudo apt install dbus-x11 -y
+sudo apt install libimlib2-dev # preview patch
 
 # Suckless Surf enviroments
 sudo apt install libglib2.0-dev -y
