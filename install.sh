@@ -42,6 +42,7 @@ sudo apt install calcurse -y
 echo "set relativenumber" >>~/.vimrc
 
 # Suckless DWM enviroments
+sudo apt install xorg
 sudo apt install make -y
 sudo apt install gcc -y
 sudo apt install g++ -y
