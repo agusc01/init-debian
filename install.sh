@@ -24,6 +24,7 @@ sudo apt install thunar -y
 sudo apt install util-linux # here's "cal" for example
 sudo apt install viewnior -y
 sudo apt install x11-xserver-utils # here's "xrandr" for screen
+sudo apt install sysstat           # here's "mpstat" for dbar
 
 # Basic plus
 sudo apt install python3 -y
