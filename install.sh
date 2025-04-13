@@ -75,8 +75,9 @@ sudo apt purge ghostscript -y
 # ==================================================
 sudo apt install npm -y
 sudo apt install nodejs -y
-npm install -g typescript-formatter
-npm install -g sass
+sudo npm install -g typescript
+sudo npm install -g typescript-formatter
+sudo npm install -g sass
 
 # ==================================================
 # Postman
@@ -113,7 +114,6 @@ rm ~/Downloads/mongo*
 cd ~/Downloads
 wget -O code-stable-x64.deb "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"
 sudo dpkg -i code-stable-x64.deb
-cd ~/Downloads
 rm ~/Downloads/code*
 
 # ==================================================
@@ -150,7 +150,7 @@ cd ~/Downloads
 rm ~/Downloads/lazydocker*
 
 # ==================================================
-# Sublie Text
+# Sublime Text
 # ==================================================
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg >/dev/null
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
@@ -180,6 +180,14 @@ cd ~/Downloads
 rm ~/Downloads/ubuntu*
 
 # ==================================================
+# Obsidian
+# ==================================================
+cd ~/Downloads
+wget -O obsidian.deb https://github.com/obsidianmd/obsidian-releases/releases/download/v1.8.9/obsidian_1.8.9_amd64.deb
+sudo dpkg -i obsidian.deb
+rm ~/Downloads/obsidian*
+
+# ==================================================
 # Settings
 # ==================================================
 sudo apt install ripgrep -y
@@ -202,8 +210,8 @@ source ~/.config/fish/config.fish
 sudo reboot
 
 # manual xammp (lammp)
-# firefox-esr http://sourceforge.net/projects/xampp/files/
+# firefox-esr http://sourceforge.net/projects/xampp/files/ &
 # cd ~/Downloads
-# chmod +x
-# ./xamp**.run (execute)
+# sudo chmod +x xampp**.run
+# sudo ./xamp**.run (execute)
 # move to /opt/lammp
