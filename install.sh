@@ -35,12 +35,9 @@ sudo apt install bat -y
 sudo apt install btop -y
 sudo apt install htop -y
 sudo apt install neofetch -y
-sudo apt install vim -y
 sudo apt install xclip -y
 sudo apt install calcurse -y
-
-# VIM always is important ...
-echo "set relativenumber" >>~/.vimrc
+sudo apt install vim -y
 
 # Suckless DWM enviroments
 sudo apt install xorg
@@ -59,58 +56,49 @@ sudo apt install libglib2.0-dev -y
 sudo apt install libgtk-3-dev -y
 sudo apt install libwebkit2gtk-4.0-dev -y
 
-# Configurations
-sudo apt install ripgrep -y
-git clone https://github.com/agusc01/ranger ~/.config/ranger
-git clone https://github.com/agusc01/surf ~/.config/surf
-git clone https://github.com/agusc01/st ~/.config/st
-git clone https://github.com/agusc01/dwm ~/.config/dwm
-git clone https://github.com/agusc01/slock ~/.config/slock
-git clone https://github.com/agusc01/dbar ~/.config/dbar
-git clone https://github.com/agusc01/dshortcuts ~/.config/dshortcuts
-sudo rm ~/.config/fish
-git clone https://github.com/agusc01/dshortcuts ~/.config/fish
-source ~/.config/fish/config.fish
-
 # Uninstall
 sudo apt purge ghostscript -y
 
 # Programming
 sudo apt install npm -y
 sudo apt install nodejs -y
+npm install -g typescript-formatter
+npm install -g sass
 
 # Just in case
 mkdir ~/Downloads
 
 # VS Code
 cd ~/Downloads
-wget -o code-stable-x64.deb "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"
+wget -O code-stable-x64.deb "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"
 sudo dpkg -i code-stable-x64.deb
+cd ~/Downloads
+rm ~/Downloads/code*
 
 # LazyGit
 cd ~/Downloads
-wget -o lazygit-v0.48.0.tar.gz "https://github.com/jesseduffield/lazygit/releases/download/v0.48.0/lazygit_0.48.0_Linux_x86_64.tar.gz"
-tar -xzf lazygit-v0.48.0.tar.gz
-cd lazygit-v0.48.0
-sudo npm install -g .
+wget -O lazygit-v0.48.0.tar.gz "https://github.com/jesseduffield/lazygit/releases/download/v0.48.0/lazygit_0.48.0_Linux_x86_64.tar.gz"
+mkdir lazygit
+tar -xzf lazygit-v0.48.0.tar.gz -C lazygit
+sudo mv -v lazygit/lazygit /usr/local/bin/
 cd ~/Downloads
 rm ~/Downloads/lazygit*
 
 # LazyNPM
 cd ~/Downloads
-wget -o lazynpm-v0.1.4.tar.gz "https://github.com/jesseduffield/lazynpm/releases/download/v0.1.4/lazynpm_0.1.4_Linux_x86_64.tar.gz"
-tar -xzf lazynpm-v0.1.4.tar.gz
-cd lazynpm-v0.1.4
-sudo npm install -g .
+wget -O lazynpm-v0.1.4.tar.gz "https://github.com/jesseduffield/lazynpm/releases/download/v0.1.4/lazynpm_0.1.4_Linux_x86_64.tar.gz"
+mkdir lazynpm
+tar -xzf lazynpm-v0.1.4.tar.gz -C lazynpm
+sudo mv -v lazynpm/lazynpm /usr/local/bin/
 cd ~/Downloads
 rm ~/Downloads/lazynpm*
 
 # LazyDocker
 cd ~/Downloads
-wget -o lazydocker-v0.24.1.tar.gz "https://github.com/jesseduffield/lazydocker/releases/download/v0.24.1/lazydocker_0.24.1_Linux_x86.tar.gz"
-tar -xzf lazydocker-v0.24.1.tar.gz
-cd lazydocker-v0.24.1
-sudo npm install -g .
+wget -O lazydocker-v0.24.1.tar.gz "https://github.com/jesseduffield/lazydocker/releases/download/v0.24.1/lazydocker_0.24.1_Linux_x86.tar.gz"
+mkdir lazydocker
+tar -xzf lazydocker-v0.24.1.tar.gz -C lazydocker
+sudo mv -v lazydocker/lazydocker /usr/local/bin/
 cd ~/Downloads
 rm ~/Downloads/lazydocker*
 
@@ -122,20 +110,39 @@ sudo apt install sublime-text
 
 # NeoVim
 cd ~/Downloads
-wget -o nvim-x86_64.tar.gz https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
-tar -xzf nvim-x86_64.tar.gz
-cd nvim-x86_64
-sudo npm install -g .
+wget https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+tar -xzf nvim-linux-x86_64.tar.gz
+sudo mv -v nvim-linux-x86_64/ /opt/nvim
+sudo ln -s /opt/nvim/bin/nvim /usr/local/bin/nvim
 cd ~/Downloads
-rm ~/Downloads/nvim-x86_64*
+rm ~/Downloads/nvim*
 
 # NerdFont Ubuntu
-wget -o ubuntu-font-v3.3.0.zip https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Ubuntu.zip
-unzip ubuntu-font-v3.3.0.zip
-sudo cp -r Ubuntu/*.ttf /usr/share/fonts/
+cd ~/Downloads
+wget -O ubuntu-font-v3.3.0.zip https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Ubuntu.zip
+unzip ubuntu-font-v3.3.0.zip -d ubuntu
+sudo cp -vr ubuntu/**.ttf /usr/share/fonts/
 sudo fc-cache -fv
 cd ~/Downloads
-rm ~/Downloads/ubuntu-font-v3.3.0*
+rm ~/Downloads/ubuntu*
+
+# Settings
+sudo apt install ripgrep -y
+sudo apt install fd-find -y
+git clone https://github.com/agusc01/vim ~/.config/vim
+# :PlugInstall
+# dos2unix ~/.vim/plugged/**
+git clone https://github.com/agusc01/nvim ~/.config/nvim
+git clone https://github.com/agusc01/ranger ~/.config/ranger
+git clone https://github.com/agusc01/surf ~/.config/surf
+git clone https://github.com/agusc01/st ~/.config/st
+git clone https://github.com/agusc01/dwm ~/.config/dwm
+git clone https://github.com/agusc01/slock ~/.config/slock
+git clone https://github.com/agusc01/dbar ~/.config/dbar
+git clone https://github.com/agusc01/dshortcuts ~/.config/dshortcuts
+sudo rm ~/.config/fish
+git clone https://github.com/agusc01/dshortcuts ~/.config/fish
+source ~/.config/fish/config.fish
 
 sudo reboot
 
