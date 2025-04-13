@@ -17,16 +17,16 @@ sudo apt install fzf -y
 sudo apt install firefox-esr -y
 sudo apt install fish -y
 sudo chsh -s /usr/bin/fish
-fish
 sudo apt install galculator -y
 sudo apt install git -y
 sudo apt install nano -y
 sudo apt install ranger -y
 sudo apt install thunar -y
-sudo apt install util-linux # here's "cal" for example
+sudo apt install arc-theme -y
+sudo apt install util-linux -y # here's "cal" for example
 sudo apt install viewnior -y
-sudo apt install x11-xserver-utils # here's "xrandr" for screen
-sudo apt install sysstat           # here's "mpstat" for dbar
+sudo apt install x11-xserver-utils -y # here's "xrandr" for screen
+sudo apt install sysstat -y           # here's "mpstat" for dbar
 
 # ==================================================
 # Basic plus
@@ -42,12 +42,14 @@ sudo apt install neofetch -y
 sudo apt install xclip -y
 sudo apt install calcurse -y
 sudo apt install gimp -y
+sudo apt install ripgrep -y
+sudo apt install fd-find -y
 sudo apt install vim -y
 
 # ==================================================
 # Suckless DWM enviroments
 # ==================================================
-sudo apt install xorg
+sudo apt install xorg -y
 sudo apt install make -y
 sudo apt install gcc -y
 sudo apt install g++ -y
@@ -56,7 +58,7 @@ sudo apt install libx11-dev -y
 sudo apt install libxft-dev -y
 sudo apt install libxinerama-dev -y
 # sudo apt install dbus-x11 -y
-sudo apt install libimlib2-dev # preview patch
+sudo apt install libimlib2-dev -y # preview patch
 
 # ==================================================
 # Suckless Surf enviroments
@@ -78,6 +80,11 @@ sudo apt install nodejs -y
 sudo npm install -g typescript
 sudo npm install -g typescript-formatter
 sudo npm install -g sass
+
+# ==================================================
+# Just for in case
+# ==================================================
+sudo mkdir -vp ~/Downloads
 
 # ==================================================
 # Postman
@@ -188,27 +195,8 @@ sudo dpkg -i obsidian.deb
 rm ~/Downloads/obsidian*
 
 # ==================================================
-# Settings
+# Xampp
 # ==================================================
-sudo apt install ripgrep -y
-sudo apt install fd-find -y
-git clone https://github.com/agusc01/vim ~/.config/vim
-# :PlugInstall
-# dos2unix ~/.vim/plugged/**
-git clone https://github.com/agusc01/nvim ~/.config/nvim
-git clone https://github.com/agusc01/ranger ~/.config/ranger
-git clone https://github.com/agusc01/surf ~/.config/surf
-git clone https://github.com/agusc01/st ~/.config/st
-git clone https://github.com/agusc01/dwm ~/.config/dwm
-git clone https://github.com/agusc01/slock ~/.config/slock
-git clone https://github.com/agusc01/dbar ~/.config/dbar
-git clone https://github.com/agusc01/dshortcuts ~/.config/dshortcuts
-sudo rm ~/.config/fish
-git clone https://github.com/agusc01/dshortcuts ~/.config/fish
-source ~/.config/fish/config.fish
-
-sudo reboot
-
 # manual xammp (lammp)
 # firefox-esr http://sourceforge.net/projects/xampp/files/ &
 # cd ~/Downloads
