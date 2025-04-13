@@ -41,6 +41,7 @@ sudo apt install htop -y
 sudo apt install neofetch -y
 sudo apt install xclip -y
 sudo apt install calcurse -y
+sudo apt install gimp -y
 sudo apt install vim -y
 
 # ==================================================
@@ -80,12 +81,31 @@ npm install -g sass
 # ==================================================
 # Postman
 # ==================================================
+cd ~/Downloads
 wget https://dl.pstmn.io/download/latest/linux64 -O postman.tar.gz
 tar -xzf postman.tar.gz
 sudo mv -v Postman/ /opt/postman
 sudo ln -s /opt/postman/Postman /usr/bin/postman
 cd ~/Downloads
 rm ~/Downloads/postman*
+
+# ==================================================
+# MongoDB bash
+# ==================================================
+cd ~/Downloads
+wget -O mongo-sh.deb https://downloads.mongodb.com/compass/mongodb-mongosh_2.5.0_amd64.deb
+sudo dpkg -i mongo-sh.deb
+cd ~/Downloads
+rm ~/Downloads/mongo*
+
+# ==================================================
+# MongoDB GUI
+# ==================================================
+wget -O mongo-compass.deb https://downloads.mongodb.com/compass/mongodb-compass_1.46.0_amd64.deb
+sudo apt install gnome-keyring
+sudo dpkg -i mongo-compass.deb
+cd ~/Downloads
+rm ~/Downloads/mongo*
 
 # ==================================================
 # VS Code
