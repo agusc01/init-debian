@@ -7,7 +7,9 @@ dbar &
 exec dwm
 EOF
 
+# ==================================================
 # Basic
+# ==================================================
 sudo apt install alsa-utils -y # here's "amixer" for sound
 sudo apt install feh -y
 sudo apt install figlet -y
@@ -26,7 +28,9 @@ sudo apt install viewnior -y
 sudo apt install x11-xserver-utils # here's "xrandr" for screen
 sudo apt install sysstat           # here's "mpstat" for dbar
 
+# ==================================================
 # Basic plus
+# ==================================================
 sudo apt install python3 -y
 sudo apt install tree -y
 sudo apt install unzip -y
@@ -39,7 +43,9 @@ sudo apt install xclip -y
 sudo apt install calcurse -y
 sudo apt install vim -y
 
+# ==================================================
 # Suckless DWM enviroments
+# ==================================================
 sudo apt install xorg
 sudo apt install make -y
 sudo apt install gcc -y
@@ -51,31 +57,48 @@ sudo apt install libxinerama-dev -y
 # sudo apt install dbus-x11 -y
 sudo apt install libimlib2-dev # preview patch
 
+# ==================================================
 # Suckless Surf enviroments
+# ==================================================
 sudo apt install libglib2.0-dev -y
 sudo apt install libgtk-3-dev -y
 sudo apt install libwebkit2gtk-4.0-dev -y
 
+# ==================================================
 # Uninstall
+# ==================================================
 sudo apt purge ghostscript -y
 
+# ==================================================
 # Programming
+# ==================================================
 sudo apt install npm -y
 sudo apt install nodejs -y
 npm install -g typescript-formatter
 npm install -g sass
 
-# Just in case
-mkdir ~/Downloads
+# ==================================================
+# Postman
+# ==================================================
+wget https://dl.pstmn.io/download/latest/linux64 -O postman.tar.gz
+tar -xzf postman.tar.gz
+sudo mv -v Postman/ /opt/postman
+sudo ln -s /opt/postman/Postman /usr/bin/postman
+cd ~/Downloads
+rm ~/Downloads/postman*
 
+# ==================================================
 # VS Code
+# ==================================================
 cd ~/Downloads
 wget -O code-stable-x64.deb "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"
 sudo dpkg -i code-stable-x64.deb
 cd ~/Downloads
 rm ~/Downloads/code*
 
+# ==================================================
 # LazyGit
+# ==================================================
 cd ~/Downloads
 wget -O lazygit-v0.48.0.tar.gz "https://github.com/jesseduffield/lazygit/releases/download/v0.48.0/lazygit_0.48.0_Linux_x86_64.tar.gz"
 mkdir lazygit
@@ -84,7 +107,9 @@ sudo mv -v lazygit/lazygit /usr/local/bin/
 cd ~/Downloads
 rm ~/Downloads/lazygit*
 
+# ==================================================
 # LazyNPM
+# ==================================================
 cd ~/Downloads
 wget -O lazynpm-v0.1.4.tar.gz "https://github.com/jesseduffield/lazynpm/releases/download/v0.1.4/lazynpm_0.1.4_Linux_x86_64.tar.gz"
 mkdir lazynpm
@@ -93,7 +118,9 @@ sudo mv -v lazynpm/lazynpm /usr/local/bin/
 cd ~/Downloads
 rm ~/Downloads/lazynpm*
 
+# ==================================================
 # LazyDocker
+# ==================================================
 cd ~/Downloads
 wget -O lazydocker-v0.24.1.tar.gz "https://github.com/jesseduffield/lazydocker/releases/download/v0.24.1/lazydocker_0.24.1_Linux_x86.tar.gz"
 mkdir lazydocker
@@ -102,13 +129,17 @@ sudo mv -v lazydocker/lazydocker /usr/local/bin/
 cd ~/Downloads
 rm ~/Downloads/lazydocker*
 
+# ==================================================
 # Sublie Text
+# ==================================================
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg >/dev/null
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 sudo apt update
 sudo apt install sublime-text
 
+# ==================================================
 # NeoVim
+# ==================================================
 cd ~/Downloads
 wget https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
 tar -xzf nvim-linux-x86_64.tar.gz
@@ -117,7 +148,9 @@ sudo ln -s /opt/nvim/bin/nvim /usr/local/bin/nvim
 cd ~/Downloads
 rm ~/Downloads/nvim*
 
+# ==================================================
 # NerdFont Ubuntu
+# ==================================================
 cd ~/Downloads
 wget -O ubuntu-font-v3.3.0.zip https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Ubuntu.zip
 unzip ubuntu-font-v3.3.0.zip -d ubuntu
@@ -126,7 +159,9 @@ sudo fc-cache -fv
 cd ~/Downloads
 rm ~/Downloads/ubuntu*
 
+# ==================================================
 # Settings
+# ==================================================
 sudo apt install ripgrep -y
 sudo apt install fd-find -y
 git clone https://github.com/agusc01/vim ~/.config/vim
