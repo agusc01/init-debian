@@ -57,7 +57,6 @@ sudo apt install build-essential -y
 sudo apt install libx11-dev -y
 sudo apt install libxft-dev -y
 sudo apt install libxinerama-dev -y
-# sudo apt install dbus-x11 -y
 sudo apt install libimlib2-dev -y # preview patch
 
 # ==================================================
@@ -65,6 +64,8 @@ sudo apt install libimlib2-dev -y # preview patch
 # ==================================================
 sudo apt install libglib2.0-dev -y
 sudo apt install libgtk-3-dev -y
+sudo apt install libgcr-3-dev -y
+sudo apt install libglib2.0-dev -y
 sudo apt install libwebkit2gtk-4.0-dev -y
 
 # ==================================================
