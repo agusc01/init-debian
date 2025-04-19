@@ -44,6 +44,9 @@ sudo apt install calcurse -y
 sudo apt install gimp -y
 sudo apt install ripgrep -y
 sudo apt install fd-find -y
+sudo apt install pavucontrol -y # control audio
+sudo apt install blueman        # control bluetooth
+sudo apt install connman        # control wifi
 sudo apt install vim -y
 
 # ==================================================
