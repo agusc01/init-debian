@@ -51,6 +51,7 @@ sudo apt install pavucontrol -y # control audio
 # sudo apt install connman        # control wifi
 sudo apt install blueman -y # control bluetooth
 sudo apt install rfkill -y
+sudo ln -s /usr/sbin/rfkill /usr/local/bin/rfkill
 sudo apt install vim -y
 
 # ==================================================
