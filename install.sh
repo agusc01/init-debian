@@ -27,6 +27,7 @@ sudo apt install util-linux -y # here's "cal" for example
 sudo apt install viewnior -y
 sudo apt install x11-xserver-utils -y # here's "xrandr" for screen
 sudo apt install sysstat -y           # here's "mpstat" for dbar
+sudo apt install curl -y
 
 # ==================================================
 # Basic plus
@@ -44,9 +45,12 @@ sudo apt install calcurse -y
 sudo apt install gimp -y
 sudo apt install ripgrep -y
 sudo apt install fd-find -y
+sudo apt install gnupg -y       # for mongod
 sudo apt install pavucontrol -y # control audio
-sudo apt install blueman        # control bluetooth
-sudo apt install connman        # control wifi
+# Supend for now , because you need ethernet to install connman
+# sudo apt install connman        # control wifi
+sudo apt install blueman -y # control bluetooth
+sudo apt install rfkill -y
 sudo apt install vim -y
 
 # ==================================================
@@ -70,11 +74,6 @@ sudo apt install libgtk-3-dev -y
 sudo apt install libgcr-3-dev -y
 sudo apt install libglib2.0-dev -y
 sudo apt install libwebkit2gtk-4.0-dev -y
-
-# ==================================================
-# Uninstall
-# ==================================================
-sudo apt purge ghostscript -y
 
 # ==================================================
 # Programming
@@ -104,6 +103,17 @@ sudo mv -v Postman/ /opt/postman
 sudo ln -s /opt/postman/Postman /usr/bin/postman
 cd ~/Downloads
 rm ~/Downloads/postman*
+
+# ==================================================
+# MongoDB
+# ==================================================
+sudo apt install gnupg curl
+curl -fsSL https://www.mongodb.org/static/pgp/server-8.0.asc |
+    sudo gpg -o /usr/share/keyrings/mongodb-server-8.0.gpg \
+        --dearmor
+echo "deb [ signed-by=/usr/share/keyrings/mongodb-server-8.0.gpg ] http://repo.mongodb.org/apt/debian bookworm/mongodb-org/8.0 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-8.0.list
+sudo apt update
+sudo apt install mongodb-org -y
 
 # ==================================================
 # MongoDB bash
