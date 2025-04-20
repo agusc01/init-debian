@@ -1,3 +1,5 @@
+#!/usr/bin/fish
+
 ufish
 usurf
 ust
