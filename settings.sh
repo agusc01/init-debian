@@ -16,5 +16,3 @@ git clone https://github.com/agusc01/dbar ~/.config/dbar
 git clone https://github.com/agusc01/dshortcuts ~/.config/dshortcuts
 mv ~/.config/fish ~/.config/fish.bak
 git clone https://github.com/agusc01/fish ~/.config/fish
-# type fish (or chsh -s /usr/bin/fish)
-# do this -> source ~/.config/fish/config.fish
