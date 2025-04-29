@@ -1,18 +1,19 @@
 # Correct way
 
-> install.sh
+```bash
+install.sh
+once_only.sh
+install-dpkg.sh
+install-tar.sh
+settings.sh
+updates.sh
+uninstall.sh
+```
 
-> once_only.sh
+## DO NOT FORGOT
 
-> install-dpkg.sh
-
-> install-tar.sh
-
-> settings.sh
-
-> updates.sh
-
-> uninstall.sh
+> :PlugInstall
+> dos2unix ~/.vim/plugged/\*\*
 
 ### TODO
 

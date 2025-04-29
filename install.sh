@@ -1,6 +1,6 @@
 mv -v ~/.xinitrc{,.bak}
 
-cat <<EOF > ~/.xinitrc
+cat <<EOF >~/.xinitrc
 # feh --bg-fill ~/Pictures/wall/gruv.png &
 fish -c 'setsound 0'
 fish -c 'smute'
@@ -29,6 +29,7 @@ sudo apt install viewnior -y
 sudo apt install x11-xserver-utils -y # here's "xrandr" for screen
 sudo apt install sysstat -y           # here's "mpstat" for dbar
 sudo apt install bc -y
+sudo apt install dos2unix -y
 sudo apt install curl -y
 
 # ==================================================
