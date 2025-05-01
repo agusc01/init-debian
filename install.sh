@@ -30,6 +30,7 @@ sudo apt install x11-xserver-utils -y # here's "xrandr" for screen
 sudo apt install sysstat -y           # here's "mpstat" for dbar
 sudo apt install bc -y
 sudo apt install dos2unix -y
+sudo apt install iw -y
 sudo apt install curl -y
 
 # ==================================================
