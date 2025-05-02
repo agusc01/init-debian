@@ -51,9 +51,7 @@ sudo apt install ripgrep -y
 sudo apt install fd-find -y
 sudo apt install gnupg -y       # for mongod
 sudo apt install pavucontrol -y # control audio
-# Supend for now , because you need ethernet to install connman
-# sudo apt install connman        # control wifi
-sudo apt install blueman -y # control bluetooth
+sudo apt install blueman -y     # control bluetooth
 sudo apt install rfkill -y
 sudo apt install vim -y
 

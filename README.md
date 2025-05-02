@@ -15,6 +15,12 @@ uninstall.sh
 > :PlugInstall
 > dos2unix ~/.vim/plugged/\*\*
 
+## MANUAL THINGS
+
+1.sudo contrab -e
+1.1. rfkill block wifi
+1.1. rfkill block bluetooth
+
 ### TODO
 
 1. copy /etc/mongod.conf
