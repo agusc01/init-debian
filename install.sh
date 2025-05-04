@@ -89,11 +89,11 @@ sudo npm install -g sass
 # ==================================================
 # Just for in case
 # ==================================================
-sudo mkdir -vp ~/Downloads
-sudo mkdir -vp ~/Documents
-sudo mkdir -vp ~/Music
-sudo mkdir -vp ~/Pictures
-sudo mkdir -vp ~/Videos
+mkdir -vp ~/Downloads
+mkdir -vp ~/Documents
+mkdir -vp ~/Music
+mkdir -vp ~/Pictures
+mkdir -vp ~/Videos
 
 # ==================================================
 # Xampp
