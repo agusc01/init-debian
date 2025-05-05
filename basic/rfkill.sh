@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt install rfkill -y # block wireless (wlan & bluetooth)
-sudo ln -fs /usr/sbin/rfkill /usr/local/bin/rfkill
+sudo ln -fvs /usr/sbin/rfkill /usr/local/bin/rfkill
 
 sudo mv -fv /etc/rc.local{,.bak}
 

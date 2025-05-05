@@ -18,7 +18,7 @@ sudo apt install mongodb-org -y
 cd ~/Downloads
 sudo wget -O mongo-sh.deb https://downloads.mongodb.com/compass/mongodb-mongosh_2.5.0_amd64.deb
 sudo dpkg -i mongo-sh.deb
-sudo rm -v mongo-sh.deb
+sudo rm -vf mongo-sh.deb
 
 # ==================================================
 # MongoDB GUI
@@ -27,4 +27,4 @@ cd ~/Downloads
 sudo wget -O mongo-compass.deb https://downloads.mongodb.com/compass/mongodb-compass_1.46.0_amd64.deb
 sudo apt install gnome-keyring
 sudo dpkg -i mongo-compass.deb
-sudo rm -v mongo-compass.deb
+sudo rm -vf mongo-compass.deb

@@ -5,4 +5,4 @@ sudo wget -O lazynpm-v0.1.4.tar.gz "https://github.com/jesseduffield/lazynpm/rel
 sudo mkdir lazynpm
 sudo tar -xzf lazynpm-v0.1.4.tar.gz -C lazynpm
 sudo mv -v lazynpm/lazynpm /usr/local/bin/
-sudo rm -v ~/Downloads/lazynpm**
+sudo rm -rfv ~/Downloads/lazynpm**

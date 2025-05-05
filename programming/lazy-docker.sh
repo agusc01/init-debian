@@ -5,4 +5,4 @@ sudo wget -O lazydocker-v0.24.1.tar.gz "https://github.com/jesseduffield/lazydoc
 sudo mkdir lazydocker
 sudo tar -xzf lazydocker-v0.24.1.tar.gz -C lazydocker
 sudo mv -v lazydocker/lazydocker /usr/local/bin/
-sudo rm -v ~/Downloads/lazydocker**
+sudo rm -rfv ~/Downloads/lazydocker**

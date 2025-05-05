@@ -20,9 +20,9 @@ sudo apt install sysstat -y           # for mpstat to dbar
 sudo apt install bc -y
 sudo apt install dos2unix -y
 sudo apt install iw -y
-sudo ln -fs /usr/sbin/iw /usr/local/bin/iw
+sudo ln -fvs /usr/sbin/iw /usr/local/bin/iw
 sudo apt install wireless-tools -y # for iwlist
-sudo ln -fs /usr/sbin/iwlist /usr/local/bin/iwlist
+sudo ln -fvs /usr/sbin/iwlist /usr/local/bin/iwlist
 sudo apt install curl -y
 sudo apt install python3 -y
 sudo apt install tree -y

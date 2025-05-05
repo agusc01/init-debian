@@ -5,4 +5,4 @@ sudo wget -O lazygit-v0.48.0.tar.gz "https://github.com/jesseduffield/lazygit/re
 sudo mkdir lazygit
 sudo tar -xzf lazygit-v0.48.0.tar.gz -C lazygit
 sudo mv -v lazygit/lazygit /usr/local/bin/
-sudo rm -v ~/Downloads/lazygit**
+sudo rm -rfv ~/Downloads/lazygit**
