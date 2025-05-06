@@ -1,7 +1,6 @@
 #!/bin/bash
 
 ./basic/core.sh
-./basic/bash.sh
 ./basic/fish.sh
 ./basic/rfkill.sh
 ./explorer-files/ranger.sh
@@ -25,4 +24,7 @@
 ./programming/sublime-text.sh
 ./programming/vim.sh
 ./programming/vscode.sh
+./programming/raspberry-pi-imager.sh
+./programming/filezilla.sh
+./basic/bash.sh
 ./basic/uninstall.sh
