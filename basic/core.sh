@@ -38,5 +38,6 @@ sudo apt install calcurse -y
 sudo apt install pavucontrol -y # control audio (with interface)
 sudo apt install blueman -y     # control bluetooth (with interface)
 # bluetoothctl to use in the terminal
-sudo apt install ufw # firewall (in the terminal)
-# sudo apt install gufw            # firewall (with interface)
+sudo apt install ufw -y # firewall (in the terminal)
+sudo apt install xfce4-screenshooter -y
+# sudo apt install gufw -y # firewall (with interface)

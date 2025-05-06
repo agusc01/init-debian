@@ -1,10 +1,11 @@
 #!/bin/bash
 
-sudo apt install gnupg -y # for mongod
+sudo apt install gnupg -y
+sudo apt install gnupg curl -y
+sudo apt install gnome-keyring -y
 # ==================================================
 # MongoDB
 # ==================================================
-sudo apt install gnupg curl
 curl -fsSL https://www.mongodb.org/static/pgp/server-8.0.asc |
     sudo gpg -o /usr/share/keyrings/mongodb-server-8.0.gpg \
         --dearmor
@@ -25,6 +26,5 @@ sudo rm -vf mongo-sh.deb
 # ==================================================
 cd ~/Downloads
 sudo wget -O mongo-compass.deb https://downloads.mongodb.com/compass/mongodb-compass_1.46.0_amd64.deb
-sudo apt install gnome-keyring
 sudo dpkg -i mongo-compass.deb
 sudo rm -vf mongo-compass.deb
