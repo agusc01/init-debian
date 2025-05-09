@@ -18,11 +18,4 @@ sudo rm -vf config.h
 sudo make clean install
 
 mv -vf ~/.xinitrc{,.bak}
-cat <<EOF >~/.xinitrc
-# feh --bg-fill ~/Pictures/wall/gruv.png &
-fish -c 'setsound 0'
-fish -c 'smute'
-fish -c 'setbrightness 50'
-dbar &
-exec dwm
-EOF
+mv ~/.config/init-debian/suckless/.xinitrc ~/.xinitrc
