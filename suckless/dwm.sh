@@ -18,4 +18,4 @@ sudo rm -vf config.h
 sudo make clean install
 
 mv -vf ~/.xinitrc{,.bak}
-mv ~/.config/init-debian/suckless/.xinitrc ~/.xinitrc
+mv .xinitrc ~/.xinitrc
