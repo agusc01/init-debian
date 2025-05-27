@@ -40,6 +40,16 @@ sudo touch config.h
 sudo rm -vf config.h
 sudo make clean install
 
+cd ~/.config/dmenu/
+git pull
+sudo touch config.h
+sudo rm -vf config.h
+sudo make clean install
+sudo dos2unix /usr/local/bin/dmenu_run
+sudo dos2unix /usr/local/bin/dmenu_path
+sudo dos2unix /usr/local/bin/dmenu_run_desktop
+sudo dos2unix /usr/local/bin/dmenu_path_desktop
+
 cd ~/bash
 git pull
 dos2unix ~/bash/scripts/*
