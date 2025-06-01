@@ -17,5 +17,5 @@ sudo touch config.h
 sudo rm -vf config.h
 sudo make clean install
 
-mv -vf ~/.xinitrc{,.bak}
-mv .xinitrc ~/.xinitrc
+mv -vf ~/.xinitrc{,.bak} || true
+cp ~/.config/init-debian/suckless/.xinitrc ~/.xinitrc
