@@ -28,11 +28,11 @@ sudo touch config.h
 sudo rm -vf config.h
 sudo make clean install
 
-cd ~/.config/dbar
-git pull
-sudo touch config.h
-sudo rm -vf config.h
-sudo make clean install
+# cd ~/.config/dbar
+# git pull
+# sudo touch config.h
+# sudo rm -vf config.h
+# sudo make clean install
 
 cd ~/.config/dshortcuts/
 git pull
