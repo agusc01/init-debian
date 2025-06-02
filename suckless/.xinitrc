@@ -1,11 +1,8 @@
 #!/bin/bash
 
-# Background
-feh --bg-fill ~/Pictures/backgrounds/debian.jpg
-
 # Wireless
 # fish -c 'wifidisable'
-fish -c 'bluetoothdisable'
+# fish -c 'bluetoothdisable'
 
 # Volume
 fish -c 'setsound 0'
@@ -19,10 +16,13 @@ fish -c 'm0'
 # fish -c 'c0'
 
 # Screen
-fish -c 'setbrightness 50'
+fish -c 'setbrightness 40'
 
 # Bar
 fish -c 'refreshdbar'
+
+# Background
+feh --bg-fill ~/Pictures/backgrounds/debian.jpg
 
 # Notification
 fish -c 'refreshdunst'
