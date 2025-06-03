@@ -1,49 +1,58 @@
 # Tools and Applications
 
-| Category                   | Application           | Terminal | Graphical |
-| -------------------------- | --------------------- | -------- | --------- |
-| **Audio**                  | `alsamixer`           | ✔️       |           |
-|                            | `pavucontrol`         |          | ✔️        |
-| **API Development**        | `postman`             |          | ✔️        |
-| **Block WiFi & Bluetooth** | `rfkill`              | ✔️       |           |
-| **Bluetooth**              | `blueman`             |          | ✔️        |
-|                            | `bluetoothctl`        | ✔️       |           |
-| **Browser**                | `surf`                |          | ✔️        |
-|                            | `firefox`             |          | ✔️        |
-|                            | `qutebrowser`         |          | ✔️        |
-| **Calender**               | `calcurse`            | ✔️       |           |
-| **Databases**              | `dbeaver`             |          | ✔️        |
-| **Documentation**          | `obsidian`            |          | ✔️        |
-| **Docker Management**      | `lazydocker`          | ✔️       |           |
-| **Display**                | `xrandr`              | ✔️       |           |
-| **File Manager**           | `ranger`              | ✔️       |           |
-|                            | `thunar`              |          | ✔️        |
-| **File Transfer**          | `filezilla`           |          | ✔️        |
-| **Git Management**         | `lazygit`             | ✔️       |           |
-| **Image Editing**          | `gpaint`              |          | ✔️        |
-|                            | `gimp`                |          | ✔️        |
-| **Image Viewer**           | `feh`                 |          | ✔️        |
-|                            | `viewnior`            |          | ✔️        |
-| **NPM Management**         | `lazynpm`             | ✔️       |           |
-| **PHP & MySQL Management** | `xampp`               | ✔️       |           |
-| **Screenshot**             | `xfce4-screenshooter` |          | ✔️        |
-| **Shell**                  | `fish`                | ✔️       |           |
-| **Terminal**               | `st`                  | ✔️       |           |
-| **Text Editor**            | `vim`                 | ✔️       |           |
-|                            | `nvim`                | ✔️       |           |
-|                            | `sublime text`        |          | ✔️        |
-|                            | `vscode`              |          | ✔️        |
-| **USB Bootable Creator**   | `raspberry pi imager` |          | ✔️        |
-| **WiFi**                   | `custom script`       | ✔️       |           |
-| **Firewall**               | `ufw`                 | ✔️       |           |
-|                            | `gufw`                |          | ✔️        |
-
-## TODO
-
--   Notifications
--   Camera
+| Category                    | Application           | Terminal | Graphical |
+| --------------------------- | --------------------- | -------- | --------- |
+| **API Development**         | `postman`             |          | ✔️        |
+| **Audio**                   | `pulsemixer`          | ✔️       |           |
+|                             | `pavucontrol`         |          | ✔️        |
+| **Block WiFi & Bluetooth**  | `rfkill`              | ✔️       |           |
+| **Bluetooth**               | `blueman`             |          | ✔️        |
+|                             | `bluez`               | ✔️       |           |
+| **Browser**                 | `surf`                |          | ✔️        |
+|                             | `librewolf`           |          | ✔️        |
+|                             | `firefox-esr`         |          | ✔️        |
+|                             | `brave`               |          | ✔️        |
+|                             | `qutebrowser`         |          | ✔️        |
+| **Calender**                | `calcurse`            | ✔️       |           |
+| **Camera**                  | `guvcview`            |          | ✔️        |
+| **Databases**               | `dbeaver`             |          | ✔️        |
+| **Disk partition**          | `gparted`             |          | ✔️        |
+|                             | `parted`              | ✔️       |           |
+| **Documentation**           | `obsidian`            |          | ✔️        |
+| **Docker Management**       | `lazydocker`          | ✔️       |           |
+| **Display**                 | `xrandr`              | ✔️       |           |
+| **Dynamic Menu**            | `rofi`                |          | ✔️        |
+|                             | `dmenu`               |          | ✔️        |
+| **File Manager**            | `ranger`              | ✔️       |           |
+|                             | `rr (custom script)`  | ✔️       |           |
+|                             | `thunar`              |          | ✔️        |
+| **File Transfer**           | `filezilla`           |          | ✔️        |
+| **Firewall**                | `ufw`                 | ✔️       |           |
+|                             | `gufw`                |          | ✔️        |
+| **Git Management**          | `lazygit`             | ✔️       |           |
+| **Image Editing**           | `kolourpaint`         |          | ✔️        |
+|                             | `gimp`                |          | ✔️        |
+| **Image Viewer**            | `feh`                 |          | ✔️        |
+|                             | `viewnior`            |          | ✔️        |
+| **Keyboard**                | `onboard`             |          | ✔️        |
+| **NPM Management**          | `lazynpm`             | ✔️       |           |
+| **PHP & MySQL Management**  | `xampp`               | ✔️       |           |
+| **Screenshot**              | `xfce4-screenshooter` |          | ✔️        |
+| **Screen Locker**           | `slock`               |          | ✔️        |
+| **Shell**                   | `fish`                | ✔️       |           |
+| **Terminal**                | `st`                  | ✔️       |           |
+| **Output Text**             | `cat`                 | ✔️       |           |
+|                             | `bat`                 | ✔️       |           |
+| **Text Editor**             | `vim`                 | ✔️       |           |
+|                             | `nvim`                | ✔️       |           |
+|                             | `sublime text`        |          | ✔️        |
+|                             | `vscode`              |          | ✔️        |
+| **USB Bootable Creator**    | `raspberry pi imager` |          | ✔️        |
+| **Virtualization Manager**  | `vagrant`             |          | ✔️        |
+| **Virtualization Software** | `virtual box`         |          | ✔️        |
+| **WiFi**                    | `network-manager`     | ✔️       |           |
 
 ## Extras
 
--   `dbar` (icons)
--   `dshotcuts` (shortcuts)
+- `dbar` (status bar)
+- `dshortcuts` (a simple shortcut cheatsheet)
