@@ -16,12 +16,24 @@ sudo apt install tldr -y
 sudo apt install dos2unix -y
 sudo apt install curl -y
 sudo apt install python3 -y
+sudo apt install python3-pip -y
 sudo apt install unzip -y
 sudo apt install xclip -y
 sudo apt install calcurse -y
 sudo apt install rofi -y
-sudo apt install xfce4-screenshooter -y
-sudo apt install guvcview -y # camera
 # sudo apt install ufw -y      # firewall (in the terminal)
-# sudo apt install gufw -y   # firewall (with interface)
+sudo apt install gufw -y # firewall (with interface)
 # sudo apt install xdotool -y
+
+# ==================================================
+# DWM
+# ==================================================
+sudo apt install xorg -y
+sudo apt install make -y
+sudo apt install gcc -y
+sudo apt install g++ -y
+sudo apt install build-essential -y
+sudo apt install libx11-dev -y
+sudo apt install libxft-dev -y
+sudo apt install libxinerama-dev -y
+sudo apt install libimlib2-dev -y # preview patch
