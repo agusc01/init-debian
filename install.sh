@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# find . -type f -name '*.sh' | grep -v install.sh | grep -v bash | grep -v core | grep -v updates | grep -v dbar | sort | awk 'BEGIN {print "./basic/core.sh"} {print} END {print "./basic/bash.sh"}' | copyme
+# find . -type f -name '*.sh' | grep -v install.sh | grep -v bash | grep -v core | grep -v updates | grep -v dbar | sort | awk 'BEGIN {print "./basic/core.sh"} {print} END {print "./basic/uninstall.sh\n./basic/bash.sh"}' | copyme
 
 ./basic/core.sh
 ./backgrounds/background.sh
@@ -10,6 +10,7 @@
 ./basic/disk.sh
 ./basic/fish.sh
 ./basic/images.sh
+./basic/keyboard.sh
 ./basic/libreoffice.sh
 ./basic/maths.sh
 ./basic/resources.sh
@@ -44,4 +45,5 @@
 ./suckless/dwm.sh
 ./suckless/slock.sh
 ./suckless/st.sh
+./basic/uninstall.sh
 ./basic/bash.sh
