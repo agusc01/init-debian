@@ -21,6 +21,7 @@ sudo apt install unzip -y
 sudo apt install xclip -y
 sudo apt install calcurse -y
 sudo apt install rofi -y
+sudo apt install dunst -y # notifications
 # sudo apt install ufw -y      # firewall (in the terminal)
 sudo apt install gufw -y # firewall (with interface)
 # sudo apt install xdotool -y
