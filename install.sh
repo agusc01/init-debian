@@ -22,6 +22,7 @@
 ./browsers/librewolf.sh
 ./browsers/qutebrowser.sh
 ./browsers/surf.sh
+./browsers/vieb.sh
 ./explorer-files/ranger.sh
 ./explorer-files/thunar.sh
 ./fonts/font.sh
