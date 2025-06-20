@@ -18,6 +18,7 @@
 ./basic/video.sh
 ./basic/wifi.sh
 ./browsers/brave.sh
+./browsers/chrome.sh
 ./browsers/firefox-esr.sh
 ./browsers/librewolf.sh
 ./browsers/qutebrowser.sh
