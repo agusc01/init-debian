@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# find . -type f -name '*.sh' | grep -v install.sh | grep -v bash | grep -v core | grep -v updates | grep -v dbar | sort | awk 'BEGIN {print "./basic/core.sh"} {print} END {print "./basic/uninstall.sh\n./basic/bash.sh"}' | copyme
+# cd ~/.config/init-debian/ && find . -type f -name '*.sh' | grep -v install.sh | grep -v bash | grep -v core | grep -v updates | grep -v dbar | sort | awk 'BEGIN {print "./basic/core.sh"} {print} END {print "./basic/uninstall.sh\n./basic/bash.sh"}' | copyme
 
 ./basic/core.sh
 ./backgrounds/background.sh
@@ -23,8 +23,10 @@
 ./browsers/qutebrowser.sh
 ./browsers/surf.sh
 ./browsers/vieb.sh
+./explorer-files/cfiles.sh
+./explorer-files/qtfm.sh
 ./explorer-files/ranger.sh
-./explorer-files/thunar.sh
+# ./explorer-files/thunar.sh
 ./fonts/font.sh
 ./programming/filezilla.sh
 ./programming/lazy-docker.sh
