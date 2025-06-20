@@ -21,7 +21,7 @@
 ./browsers/firefox-esr.sh
 ./browsers/librewolf.sh
 ./browsers/qutebrowser.sh
-./browsers/surf.sh
+# ./browsers/surf.sh
 ./browsers/vieb.sh
 ./explorer-files/cfiles.sh
 ./explorer-files/qtfm.sh
@@ -43,7 +43,7 @@
 ./programming/vim.sh
 ./programming/virtualbox.sh
 ./programming/vscode.sh
-./suckless/dmenu.sh
+# ./suckless/dmenu.sh
 ./suckless/dshortcuts.sh
 ./suckless/dwm.sh
 ./suckless/slock.sh
