@@ -24,4 +24,4 @@ Terminal=false
 Type=Application
 Categories=Network;WebBrowser;
 EOF'
-sudo chmod +x /usr/share/applications/surf.desktop
+# sudo chmod +x /usr/share/applications/surf.desktop
