@@ -27,5 +27,8 @@ feh --bg-fill ~/Pictures/backgrounds/debian.jpg
 # Notification
 fish -c 'refreshdunst'
 
+# Composition maganer. Make bg opacity in st (simple terminal) works !
+picom &
+
 # GUI
 exec dwm
