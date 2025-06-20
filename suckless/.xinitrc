@@ -2,7 +2,7 @@
 
 # Wireless
 # fish -c 'wifidisable'
-# fish -c 'bluetoothdisable'
+fish -c 'bluetoothdisable'
 
 # Volume
 fish -c 'setsound 0'
@@ -16,10 +16,10 @@ fish -c 'm0'
 # fish -c 'c0'
 
 # Screen
-fish -c 'setbrightness 40'
+fish -c 'setbrightness 70'
 
 # Bar
-fish -c 'refreshdbar'
+fish -c 'refreshdbar true'
 
 # Background
 feh --bg-fill ~/Pictures/backgrounds/debian.jpg
