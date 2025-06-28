@@ -30,6 +30,9 @@ sudo apt install dunst -y # notifications
 sudo apt install gufw -y # firewall (with interface)
 # sudo apt install xdotool -y
 
+# Install Rust, to then using with Cargo
+sudo curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
 # ==================================================
 # DWM
 # ==================================================
