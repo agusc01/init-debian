@@ -1,10 +1,10 @@
 #!/bin/bash
 
-cd ~/Downloads
+cd /tmp
 sudo wget -O postman.tar.gz https://dl.pstmn.io/download/latest/linux64
 sudo tar -xzf postman.tar.gz
 sudo mv -v Postman/ /opt/postman
-sudo ln -fvs /opt/postman/Postman /usr/bin/postman && sudo rm -rfv ~/Downloads/postman**
+sudo ln -fvs /opt/postman/Postman /usr/bin/postman
 
 sudo bash -c 'cat <<EOF >/usr/share/applications/postman.desktop
 [Desktop Entry]

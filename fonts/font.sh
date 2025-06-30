@@ -1,7 +1,7 @@
 #!/bin/bash
 
-cd ~/Downloads
+cd /tmp
 sudo wget -O ubuntu-font-v3.3.0.zip https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Ubuntu.zip
 sudo unzip ubuntu-font-v3.3.0.zip -d ubuntu
 sudo cp -vr ubuntu/**.ttf /usr/share/fonts/
-sudo fc-cache -fv && sudo rm -rvf ~/Downloads/ubuntu**
+sudo fc-cache -fv
