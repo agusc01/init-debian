@@ -37,6 +37,7 @@
 ./programming/nodejs-npm.sh
 ./programming/nvim.sh
 ./programming/obsidian.sh
+./programming/php.sh
 ./programming/postman.sh
 ./programming/raspberry-pi-imager.sh
 ./programming/sublime-text.sh
