@@ -14,6 +14,7 @@ sudo apt install tree -y
 sudo apt install fzf -y
 sudo apt install nano -y
 sudo apt install bat -y
+sudo apt install lsd -y
 sudo apt install tldr -y
 sudo apt install dos2unix -y
 sudo apt install curl -y
