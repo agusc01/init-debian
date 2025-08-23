@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo npm install -g intelephense # for nvim (lazyvim)
+
 sudo apt install php -y
 
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
