@@ -3,7 +3,7 @@
 sudo apt install thunar -y
 sudo apt install arc-theme -y
 
-mv -vpf ~/.config/gtk-3.0/settings.ini{,.bak}
+mv -vf ~/.config/gtk-3.0/settings.ini{,.bak}
 mkdir -vp ~/.config/gtk-3.0
 cat <<EOF >~/.config/gtk-3.0/settings.ini
 [Settings]
