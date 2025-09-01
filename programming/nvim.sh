@@ -2,6 +2,9 @@
 
 sudo apt install ripgrep -y
 sudo apt install fd-find -y
+sudo apt install gcc -y
+sudo apt install g++ -y
+sudo apt install build-essential -y
 
 cd /tmp
 sudo wget https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz

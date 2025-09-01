@@ -16,3 +16,4 @@ sudo npm install -g typescript-language-server
 sudo npm install -g typescript-formatter
 sudo npm install -g sass
 sudo npm install -g browser-sync
+sudo npm install -g concurrently
