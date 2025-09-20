@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sudo apt update
 sudo apt install thunar -y
 sudo apt install arc-theme -y
 
