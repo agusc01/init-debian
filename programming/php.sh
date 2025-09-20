@@ -1,9 +1,10 @@
 #!/bin/bash
 
+sudo apt update
+~/.config/init-debian/programming/nodejs-npm.sh
+
 sudo npm install -g intelephense # for nvim (lazyvim)
-
 sudo apt install php -y
-
 sudo apt install php-mysql -y
 
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"

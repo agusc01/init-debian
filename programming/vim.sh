@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo apt update
+sudo apt install dos2unix -y
 sudo apt install vim -y
 mv -vf ~/.vim{,.bak}
 git clone https://github.com/agusc01/vim ~/.vim
@@ -11,6 +13,8 @@ source ~/.vim/settings.vim
 source ~/.vim/plugins.vim
 source ~/.vim/keybindings.vim
 EOF
+
+~/.config/init-debian/programming/nodejs-npm.sh
 
 # :PlugInstall
 # After do :PlugInstall make another dos2unix

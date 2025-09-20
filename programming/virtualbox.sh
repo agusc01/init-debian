@@ -1,9 +1,16 @@
 #!/bin/bash
 
-cd /tmp
-sudo wget -O virtual-box.deb https://download.virtualbox.org/virtualbox/7.1.8/virtualbox-7.1_7.1.8-168469~Debian~bookworm_amd64.deb && sudo dpkg -i virtual-box.deb
+if command -v virtualbox &> /dev/null; then
+    echo 'virtualbox is already installed !'
+else
+    sudo apt update
+    sudo apt install wget -y
 
-sudo apt update
-sudo apt install linux-headers-$(uname -r)
-sudo apt install build-essential dkms -y
-sudo /sbin/vboxconfig
+    cd /tmp
+    sudo wget -O virtual-box.deb https://download.virtualbox.org/virtualbox/7.2.0/virtualbox-7.2_7.2.0-170228~Debian~trixie_amd64.deb && sudo dpkg -i virtual-box.deb
+
+    sudo apt update
+    sudo apt install linux-headers-$(uname -r)
+    sudo apt install build-essential dkms -y
+    sudo /sbin/vboxconfig
+fi
