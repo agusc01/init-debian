@@ -13,3 +13,5 @@ sudo apt install wireless-tools -y # for iwlist
 sudo ln -fvs /usr/sbin/iwlist /usr/local/bin/iwlist
 
 sudo apt install network-manager -y
+
+sudo chmod 744 /etc/network/interfaces
