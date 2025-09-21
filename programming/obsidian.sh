@@ -1,7 +1,9 @@
 #!/bin/bash
 
-if command -v obsidian &> /dev/null; then
-    echo 'obsidian is already installed !'
+PROGRAM="obsidian"
+
+if command -v "$PROGRAM" > /dev/null; then
+    echo -e "\n\n$PROGRAM is already installed !\n\n"
 else
     sudo apt update
     sudo apt install wget -y

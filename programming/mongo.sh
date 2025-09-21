@@ -5,8 +5,10 @@ sudo apt install gnupg -y
 sudo apt install gnupg curl -y
 sudo apt install gnome-keyring -y
 
-if command -v mongod &> /dev/null; then
-    echo 'mongod is already installed !'
+PROGRAM="mongod"
+
+if command -v "$PROGRAM" > /dev/null; then
+    echo -e "\n\n$PROGRAM is already installed !\n\n"
 else
     sudo apt install curl -y
     curl -fsSL https://www.mongodb.org/static/pgp/server-8.0.asc |
@@ -17,8 +19,10 @@ else
     sudo apt install mongodb-org -y
 fi
 
-if command -v mongosh &> /dev/null; then
-    echo 'mongosh is already installed !'
+PROGRAM="mongosh"
+
+if command -v "$PROGRAM" > /dev/null; then
+    echo -e "\n\n$PROGRAM is already installed !\n\n"
 else
     sudo apt update
     sudo apt install wget -y
@@ -26,8 +30,10 @@ else
     sudo wget -O mongo-sh.deb https://downloads.mongodb.com/compass/mongodb-mongosh_2.5.0_amd64.deb && sudo dpkg -i mongo-sh.deb
 fi
 
-if command -v mongodb-compass &> /dev/null; then
-    echo 'mongodb-compass is already installed !'
+PROGRAM="mongodb-compass"
+
+if command -v "$PROGRAM" > /dev/null; then
+    echo -e "\n\n$PROGRAM is already installed !\n\n"
 else
     sudo apt update
     sudo apt install wget -y

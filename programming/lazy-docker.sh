@@ -1,7 +1,9 @@
 #!/bin/bash
 
-if command -v lazydocker &> /dev/null; then
-    echo 'lazydocker is already installed !'
+PROGRAM="lazydocker"
+
+if command -v "$PROGRAM" > /dev/null; then
+    echo -e "\n\n$PROGRAM is already installed !\n\n"
 else
     sudo apt update
     sudo apt install wget -y

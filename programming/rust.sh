@@ -1,7 +1,9 @@
 #!/bin/bash
 
-if command -v rustc &> /dev/null; then
-    echo 'rust is already installed !'
+PROGRAM="rustc"
+
+if command -v "$PROGRAM" > /dev/null; then
+    echo -e "\n\n$PROGRAM is already installed !\n\n"
 else
     sudo apt update
     sudo apt install curl -y

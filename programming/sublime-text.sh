@@ -1,7 +1,9 @@
 #!/bin/bash
 
-if command -v subl &> /dev/null; then
-    echo 'subl is already installed !'
+PROGRAM="subl"
+
+if command -v "$PROGRAM" > /dev/null; then
+    echo -e "\n\n$PROGRAM is already installed !\n\n"
 else
     sudo apt update
     sudo apt install wget -y

@@ -1,7 +1,9 @@
 #!/bin/bash
 
-if command -v fish &> /dev/null; then
-    echo 'fish is already installed !'
+PROGRAM="fish"
+
+if command -v "$PROGRAM" > /dev/null; then
+    echo -e "\n\n$PROGRAM is already installed !\n\n"
 else
     sudo apt install fish -y
     # chsh -s /usr/bin/fish

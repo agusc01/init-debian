@@ -14,8 +14,10 @@ sudo apt install fzf -y
 sudo apt install ripgrep -y
 sudo apt install fd-find -y
 
-if command -v nvim &> /dev/null; then
-    echo 'nvim is already installed !'
+PROGRAM="nvim"
+
+if command -v "$PROGRAM" > /dev/null; then
+    echo -e "\n\n$PROGRAM is already installed !\n\n"
 else
     sudo apt install wget -y
     sudo apt install tar -y

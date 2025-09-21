@@ -1,7 +1,9 @@
 #!/bin/bash
 
-if command -v cfiles &> /dev/null; then
-    echo 'cfiles is already installed !'
+PROGRAM="cfiles"
+
+if command -v "$PROGRAM" > /dev/null; then
+    echo -e "\n\n$PROGRAM is already installed !\n\n"
 else
     sudo apt update
     sudo apt install git -y

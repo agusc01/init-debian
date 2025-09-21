@@ -1,7 +1,9 @@
 #!/bin/bash
 
-if command -v qtfm &> /dev/null; then
-    echo 'qtfm is already installed !'
+PROGRAM="qtfm"
+
+if command -v "$PROGRAM" > /dev/null; then
+    echo -e "\n\n$PROGRAM is already installed !\n\n"
 else
     sudo apt install qt5-qmake -y
     sudo apt install qtbase5-dev -y

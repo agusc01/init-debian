@@ -1,7 +1,9 @@
 #!/bin/bash
 
-if command -v vagrant &> /dev/null; then
-    echo 'vagrant is already installed !'
+PROGRAM="vagrant"
+
+if command -v "$PROGRAM" > /dev/null; then
+    echo -e "\n\n$PROGRAM is already installed !\n\n"
 else
     sudo apt update
     sudo apt install wget -y

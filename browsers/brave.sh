@@ -1,12 +1,18 @@
 #!/bin/bash
 
-sudo apt update
-sudo apt install xwayland
-sudo apt install curl -y
+PROGRAM="brave-browser"
 
-sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
-sudo apt update
-sudo apt install brave-browser -y
+if command -v "$PROGRAM" > /dev/null; then
+    echo -e "\n\n$PROGRAM is already installed !\n\n"
+else
+    sudo apt update
+    sudo apt install xwayland
+    sudo apt install curl -y
 
-# brave-browser --no-sandbox --enable-features=UseOzonePlatform --ozone-platform=wayland
+    sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+    echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+    sudo apt update
+    sudo apt install brave-browser -y
+
+    # brave-browser --no-sandbox --enable-features=UseOzonePlatform --ozone-platform=wayland
+fi

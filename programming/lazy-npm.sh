@@ -1,7 +1,9 @@
 #!/bin/bash
 
-if command -v laynpm &> /dev/null; then
-    echo 'lazynpm is already installed !'
+PROGRAM="lazynpm"
+
+if command -v "$PROGRAM" > /dev/null; then
+    echo -e "\n\n$PROGRAM is already installed !\n\n"
 else
     sudo apt update
     sudo apt install wget -y

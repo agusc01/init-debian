@@ -1,7 +1,9 @@
 #!/bin/bash
 
-if command -v code &> /dev/null; then
-    echo 'code is already installed !'
+PROGRAM="code"
+
+if command -v "$PROGRAM" > /dev/null; then
+    echo -e "\n\n$PROGRAM is already installed !\n\n"
 else
     sudo apt update
     sudo apt install wget -y
