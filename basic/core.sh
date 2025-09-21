@@ -20,7 +20,7 @@ sudo apt install curl -y
 # sudo apt install python3 -y
 # sudo apt install python3-pip -y
 sudo apt install unzip -y
-sudo apt install wl-clipboard -y
+sudo apt install xclip -y
 sudo apt install ascii -y
 sudo apt install rofi -y
 sudo apt install dunst -y
