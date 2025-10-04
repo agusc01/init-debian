@@ -13,4 +13,4 @@ sudo rm -vf config.h
 sudo make clean install
 
 mv -vf ~/.xinitrc{,.bak} || true
-cp ~/.config/init-debian/wm/.dwm_xinitrc ~/.xinitrc
+cp ~/.config/dwm/.xinitrc ~/.xinitrc
