@@ -6,7 +6,7 @@ mkdir -vp ~/Music
 mkdir -vp ~/Pictures
 mkdir -vp ~/Videos
 
-sudo ln -fvs /media/dev/rootfs/usr/bin/env /usr/bin/env
+# sudo ln -fvs /media/dev/rootfs/usr/bin/env /usr/bin/env
 
 sudo apt install git -y
 sudo apt install figlet -y
