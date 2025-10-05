@@ -3,6 +3,8 @@
 sudo apt update
 ~/.config/init-debian/programming/nodejs-npm.sh
 
+sudo apt install net-tools -y # for xampp
+
 sudo npm install -g intelephense # for nvim (lazyvim)
 sudo apt install php -y
 sudo apt install php-mysql -y

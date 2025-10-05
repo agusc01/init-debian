@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo apt install net-tools -y # for xampp
+
 sudo apt install rfkill -y # block wireless (wlan & bluetooth)
 sudo ln -fvs /usr/sbin/rfkill /usr/local/bin/rfkill
 
