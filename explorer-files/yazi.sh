@@ -12,7 +12,7 @@ else
     sudo apt install 7zip -y
     sudo apt install jq -y
     sudo apt install libpoppler-dev poppler-utils -y
-    sudo apt install fd-files -y
+    sudo apt install fd-find -y
     sudo apt install ripgrep -y
     sudo apt install fzf -y
     sudo apt install zoxide -y
