@@ -8,6 +8,7 @@ else
     sudo apt install wget -y
 
     sudo apt update
+    sudo apt install libfuse2 -y
     sudo apt install libarchive13 -y
     sudo apt install qml-module-qtquick2 -y
     sudo apt install qml-module-qtquick-controls2 -y
